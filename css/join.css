@@ -1,0 +1,267 @@
+body{
+  font-family: "PT Sans";
+}
+
+h1, h2{
+  font-weight: 200;
+}
+
+/*NAV CSS */
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+}
+
+.nav_list{
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+}
+
+.nav_item{
+  padding: 6px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.nav_item a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#logo{
+  background-color:#F5005B;
+  padding: 10px;
+  height: 75px;
+  width: 75px;
+}
+
+#home_nav{
+  background-color: #00A5BF;
+}
+
+#cal_nav{
+  background-color: #00B7D3;
+}
+
+#join_nav{
+  background-color: #00D5E7;
+}
+
+#blank_space{
+  display: none;
+}
+
+/*PROFILE CSS */
+
+.profile_upload{
+  margin-bottom: 7vw;
+  margin-left: 2vw;
+}
+#profile_pic{
+  height: 75vw;
+  width: 75vw;
+  border-radius: 360px;
+  margin-left: 12vw;
+}
+
+.profile_input{
+  margin-bottom: 5vw;
+  margin-left: 3vw;
+}
+
+.profile_input input{
+  padding: 2vw;
+  width: 80vw;
+}
+
+
+/*PROFILE CSS */
+
+#text_break{
+  padding-top: 4vw;
+  padding-left: 3vw;
+}
+
+.checkbox_input{
+  margin-bottom: 3vw;
+  margin-left: 3vw;
+}
+
+.add_section{
+  margin-top: 8vw;
+  margin-left: 3vw;
+}
+
+.add_section input{
+  padding-bottom:10vw;
+  width: 95%;
+}
+
+input[type=submit]{
+  margin-left: 3vw;
+  margin-top: 5vw;
+  margin-bottom: 8vw;
+  width: 100px;
+  height: 50px;
+  padding: 5px 10px;
+  border: 0;
+  background: none;
+  box-shadow:none;
+  border-radius: 0px;
+  background-color: #F5005B;
+  color:#FFFFFF;
+}
+
+/* Footer */
+
+footer{
+  background-color: #7DDFE8;
+  color: #ffff;
+}
+
+#copyright{
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+
+/* media query settings*/
+
+@media(min-width: 545px) and (max-width:768px){
+  .nav_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav_item{
+    flex-shrink: 20%;
+    padding: 37.05px;
+    align-self: center;
+  }
+
+  #blank_space{
+    display:block;
+    flex-grow: 2;
+    flex-basis: 55%;
+    padding: 47.5px;
+    background-color: #7DDFE8;
+  }
+
+  .profile_section_one{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .profile_upload{
+    width: 100%;
+  }
+
+  #profile_pic{
+    margin-left: 2vw;
+    height: 35vw;
+    width: 35vw;
+  }
+
+  .profile_input{
+    margin-left: 6vw;
+  }
+
+  .profile_input input{
+    padding: 1vw;
+    width: 40vw;
+  }
+
+  .checkbox_section{
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+  }
+
+  .checkbox_input{
+    flex-grow: 1;
+    width: 40%;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+/*********************
+MEDIA QUERIES - DESKTOP
+***********************/
+@media(min-width: 769px){
+
+  .nav_list{
+    display: flex;
+    flex-direction: row;
+  }
+  .nav_item{
+    flex-shrink: 20%;
+    padding: 37.05px;
+    align-self: center;
+  }
+
+  #blank_space{
+    display:block;
+    flex-grow: 2;
+    flex-basis: 55%;
+    padding: 47.5px;
+    background-color: #7DDFE8;
+  }
+
+  .profile_section_one{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #profile_pic{
+    margin-left: 2vw;
+    height: 30vw;
+    width: 30vw;
+    order: 2;
+  }
+
+  .profile_info{
+    display: flex;
+    flex-flow: row wrap;
+    width: 65%;
+  }
+
+  .profile_input{
+    margin-left: 1vw;
+    margin-bottom: 1.5vw;
+    padding: 0vw;
+    margin-right: 1vw;
+  }
+
+  .profile_input input{
+    padding: 1vw;
+    width: 26vw;
+  }
+
+  .checkbox_section{
+    display: flex;
+    flex-flow: row wrap;
+    width: 75%;
+  }
+
+  .checkbox_input{
+    margin-bottom: 0.5vw;
+    width: 27%;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
+
+}

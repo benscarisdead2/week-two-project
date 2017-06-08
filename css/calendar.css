@@ -1,0 +1,178 @@
+body{
+  font-family: "PT Sans";
+}
+
+/* Global */
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+}
+
+.nav_list{
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+}
+
+.nav_item{
+  padding: 6px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.nav_item a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#logo{
+  background-color:#F5005B;
+  padding: 10px;
+  height: 75px;
+  width: 75px;
+}
+
+#home_nav{
+  background-color: #00A5BF;
+}
+
+#cal_nav{
+  background-color: #00B7D3;
+}
+
+#join_nav{
+  background-color: #00D5E7;
+}
+
+#blank_space{
+  display: none;
+}
+
+/* TEXT FORMAT */
+
+h1{
+  font-weight: 200;
+  margin-left: 3vw;
+}
+
+h2{
+  margin-left: 4vw;
+  padding-top: 4vw;
+  color: #fff;
+  font-weight: 200;
+
+}
+section{
+  background-color: #0B1942;
+  padding-bottom: 15vw;
+}
+.month{
+  display: flex;
+  flex-direction: column;
+}
+
+.week{
+  display: flex;
+  flex-direction: row;
+}
+
+.day{
+  flex-grow: 1;
+  height: 12vw;
+  width: 20vw;
+  background-color: #fff;
+  border: 1px solid #0B1942;
+  align-self: flex-start;
+}
+
+.day_number{
+  margin-top: 0px;
+  background-color: #0B1942;
+  color: #fff;
+  width: 4vw;
+  padding: 1.4vw;
+  font-size: 12px;
+}
+
+.last_day{
+  height: 12vw;
+  width: 13.15vw;
+  background-color: #fff;
+  border: 1px solid #0B1942;
+  }
+
+.selected{
+  background-color: #F5005B;
+}
+
+/* Footer */
+
+footer{
+  background-color: #7DDFE8;
+  color: #ffff;
+}
+
+#copyright{
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+/* media query settings*/
+
+@media(min-width: 545px) and (max-width:768px){
+  .nav_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav_item{
+    flex-shrink: 20%;
+    padding: 37.05px;
+    align-self: center;
+  }
+
+  #blank_space{
+    display:block;
+    flex-grow: 2;
+    flex-basis: 55%;
+    padding: 47.5px;
+    background-color: #7DDFE8;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+ 
+  @media(min-width: 769px){
+    .nav_list{
+      display: flex;
+      flex-direction: row;
+    }
+    .nav_item{
+      flex-shrink: 20%;
+      padding: 37.05px;
+      align-self: center;
+    }
+
+    #blank_space{
+      display:block;
+      flex-grow: 2;
+      flex-basis: 55%;
+      padding: 47.5px;
+      background-color: #7DDFE8;
+    }
+
+    footer{
+      display: flex;
+      flex-direction: row;
+    }
+  }
